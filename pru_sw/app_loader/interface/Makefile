@@ -9,7 +9,7 @@ AR = $(CROSS_COMPILE)ar
 INCLUDEDIR = ../include
 LIBDIR	   = ../lib
 
-C_FLAGS += -fPIC -I. -Wall -I$(INCLUDEDIR)
+C_FLAGS += -I. -Wall -I$(INCLUDEDIR)
 
 COMPILE.c = $(CC) $(C_FLAGS) $(CPP_FLAGS) -c
 AR.c	  = $(AR) rc
